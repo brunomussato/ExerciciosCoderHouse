@@ -49,7 +49,10 @@ a:visited:not(.essenao) {
 
     border: 1px solid red;
     display: flex;
-    flex-direction: column-reverse
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .d1 {
@@ -95,3 +98,53 @@ a:visited:not(.essenao) {
     border: 1px dashed burlywood;
 
 }
+
+#grade {
+    display: grid;
+    grid-template-areas:
+      "nav nav header header header"
+      "nav nav produtos produtos quadrado1"
+      "footer footer produtos produtos quadrado2";
+    
+    grid-template-rows: 100px 100px 100px; 
+    grid-template-columns: 10% 30% 10% 20% 20%;
+    grid-gap: 16px;
+    
+ }
+ .border {
+    border: 1px solid black;
+    border-radius: 8px;
+ }
+
+ header {
+    grid-area: header;
+    background-color: darkcyan;
+ }
+ footer {
+    grid-area: footer;
+    background-color: darkorchid;
+ }
+ section#produtos {
+    grid-area: produtos;
+    background-color: chocolate;
+
+ }
+ section#quadrado1{
+    grid-area: quadrado1;    
+    background-color: darkblue; 
+ }
+
+ section#quadrado2{
+    grid-area: quadrado2;    
+    background-color: grey; 
+ }
+
+
+ nav {
+    grid-area: nav;
+    background-color: aquamarine;
+ }
+ aside {
+    grid-area: publicidade;
+ }
+ 
