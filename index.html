@@ -9,141 +9,87 @@
     <meta name="keywords" content="coderhouse, coder, exercicios de front end">
     <link rel='stylesheet' type='text/css' media='screen' href='primeiro.css'>
     <script src='main.js'></script>
+    <!-- CDN do Bootstrap do CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CDN da biblioteca do Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN da biblioteca do Popper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN do Bootstrap do JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Bruno Mussato - UX designer 15/06/1992</h1>
-        <h2>Exercicios coder</h2>
-    </header>
-    
-    <nav>
-    Esta é a barra de navegacao que contem os links
-        <a href="testedelinkquebrado"></a>
-        <a href="testedelinkquebrado2"></a>
-        <a href="testedelinkquebrado3"></a>
-    </nav>
 
-    <section>
-        
-            <h3>Receita de Bolo</h3>
-            <h4>Ingredientes</h4>
-            <ul id="lista1">
-              <li>2 xicaras de chá de farinha de trigo</li>
-              <li>1 e meia xicara de cha de açucar</li>
-              <li>1 xicara de cha de chocolate em po dois frades</li>
-              <li>1 colher de sopa de fermeneto em po</li>
-              <li>meia colher de cha de bicarbonato de sodio</li>
-              <li>1 xicara de cha de oleo</li>
-              <li>3 ovos</li>
-              <li>2 xicaras de cha de agua fervente</li>
-            </ul>
-            <h4>Modo de Preparo</h4>
-            <ol id="lista2">
-              <li>Em um recipiente, misture a farinha de trigo, o açúcar, o Chocolate em Pó DOIS FRADES, o fermento e o bicarbonato peneirados;</li>
-              <li>Junte o óleo, os ovos e a água fervente, misturando bem;</li>
-              <li>Despeje a massa em uma fôrma de furo central (24 cm de diâmetro) untada com óleo e polvilhada com farinha de trigo, e leve ao forno médio (180°C), preaquecido, por 40 minutos.</li>
-            </ol>
-            <a name="receitaoriginal" href="https://www.receitasnestle.com.br/blog-post/bolo-de-chocolate-simples?amp&gclid=Cj0KCQjwsIejBhDOARIsANYqkD0vCs-JbhpFXLYDupRpYsQNeD6EAsDmxQlTbNJMmPfuBhhTWgdebNsaAuTiEALw_wcB&gclsrc=aw.ds">Receita original</a>
-       
+    <div container>
 
-    </section>
-    
-    <div class="divPai">
-
-       <div class="d1"> 1 </div> 
-       <div class="d2"> 2 </div> 
-       <div class="d3"> 3 </div> 
-       <div class="d4"> 4 </div> 
-       <div class="d5"> 5 </div> 
+        <table class="table table-striped" >
+            <thead>
+              <tr>
+             
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                <td>TED</td>
+                <td>22</td>
+                <td>estudante</td>
+              </tr>
+              <tr>
+               
+                <td>Ralf</td>
+                <td>26</td>
+                <td>designer</td>
+              </tr>
+           
+            </tbody>
+          </table>
 
     </div>
 
-    <br>
-    <p class="desafio1">
-        Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Si num tem leite então bota uma pinga aí cumpadi!Sapien in monti palavris qui num significa nadis i pareci latim.
-    </p>
-    <p class="desafio2">
-        Quis volutpat erat hendrerit non. Nam vulputate dapibus.Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Si num tem leite então bota uma pinga aí cumpadi!Sapien in monti palavris qui num significa nadis i pareci latim.
-    </p>
-    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-6"> 6 colunas</div>
+            <div class="col-6"> +6 colunas</div>
+        </div>
 
-    <section>
-        <h3>Tabela de Produtos</h3>
-        <table border="1">
-            <tr>
-                <td>Produto</td>
-                <td>Preço unitário</td>
-                <td>Quantidade em estoque</td>
-            </tr>
-            <tr>
-                <td>HD SATA 80GB </td>
-                <td>R$ 85,00 </td>
-                <td>35</td>
-            </tr>
-            <tr>
-                <td>Pen drive 2 gb</td>
-                <td>R$ 15,00</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>Impressora a laser colorida</td>
-                <td>R$ 613,99</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Monitor LCD 17'</td>
-                <td>R$ 309,00</td>
-                <td>41</td>
-            </tr>
-        </table>
+        <div class="row">
+            <div class="col-4"> 4 colunas</div>
+            <div class="col-4"> +4 colunas</div>
+            <div class="col-4" class="red" > <button type="button" class="btn"> botaozao </button></div>
+        </div>
 
-    </section>
-
-    <article>
-        <a href="https://dig.watch/updates/us-lawmakers-are-determined-to-govern-ai-the-question-is-how-to">Link para a publi original</a> 
-        <h2>US regulators to decide the path for AI Regulation</h2>
-        Prompted by the rise of generative artificial intelligence systems (AI) such as OpenAIs ChatGPT, <br>
-         lawmakers are currently exploring a variety of approaches to govern AI. The opinions differ widely.<br>
-         <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2023/05/little-rock-arkansas-usa-at-the-state-capitol-and-park-1024x684.jpg" alt="imagem do artigo descrito">
-
-    </article>
-<br><br>
-
-    <div class="testeAula">
-        Este é um teste de aulaaaaaaaaa
 
     </div>
 
-    <aside>
-        Aside = informacoes nao relevantes para o conteudo principal
-    </aside>
+    comprar o cafe 
+    trazer o cafe pra casa
+    medir a quantidade de agua
+    esquentar a agua
+    colocar o filtro de papel
+    escaldar o filtro
+    pesar o cafe 
+    moer o cafe 
+    colocar o cafe no filtro 
+    colocar a agua
 
-    <div class="cssIsAwesome">
-        CSS IS <strong>AWESOME</strong>
-    </div>
-
-    <br>
-    <br><br><br><br><br>
-
-    <div id="grade">
-        <header class="border"></header>
-        <section id="produtos" class="border"></section>
-        <section id="quadrado1" class="border"></section>
-        <section id="quadrado2" class="border"></section>
-        <nav class="border"></nav>
-        <footer class="border"></footer>
-   </div>
-   
-
-
-<br><br><br><br><br>
-
-    <footer>
-        <a  href="brunomart@hotmail.com">E-mail</a>
-        <a class="essenao" href="https://www.linkedin.com/in/bruno-mussato/">Linkedin</a>
-    </footer>
-
-
+    F and V     res. F 
+    F or V      res. V 
+    F and V     res F 
 
 </body>
 </html>
